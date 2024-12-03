@@ -70,3 +70,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .container-x {
+    @apply px-5 md:px-10 lg:px-20 xl:px-32
+  }
+
+  .container-y {
+    @apply py-5 md:py-10
+  }
+
+  .space-container {
+    @apply space-y-5 flex flex-col
+  }
+
+  .container-main {
+    @apply container-x container-y
+  }
+}
