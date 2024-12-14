@@ -1,15 +1,17 @@
 /** @format */
 
 import { createFileRoute } from "@tanstack/react-router";
+import Dashboard from "@/components/Dashboard";
 
 export const Route = createFileRoute("/")({
-	component: HomeComponent,
+  component: HomeComponent,
 });
 
 function HomeComponent() {
-	return (
-		<div className="p-2 bg-slate-500 text-4xl">
-			<h1>Welcome Home!</h1>
-		</div>
-	);
+  return (
+    <div className={"flex flex-col h-full space-y-5"}>
+      <h1 className={"text-3xl"}>Welcome Home!</h1>
+      <Dashboard />
+    </div>
+  );
 }
