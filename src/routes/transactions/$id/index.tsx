@@ -1,7 +1,7 @@
 /** @format */
 
 import { createFileRoute, notFound } from "@tanstack/react-router";
-import { getTransactions } from "@/libs/mock";
+import { getTransactions } from "@/lib/mock";
 
 export const Route = createFileRoute("/transactions/$id/")({
 	component: RouteComponent,

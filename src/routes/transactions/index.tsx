@@ -1,7 +1,7 @@
 /** @format */
 
 import { createFileRoute } from "@tanstack/react-router";
-import { getTransactions } from "@/libs/mock";
+import { getTransactions } from "@/lib/mock";
 import TransactionCard from "@/components/TransactionCard";
 import {
 	Pagination,
